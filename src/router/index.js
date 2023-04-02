@@ -5,16 +5,40 @@ const router = createRouter({
 	routes: [
 		{
 			path: "/",
-			name: "TheWelcome",
+			name: "Home",
 			component: HomeView,
 		},
 		{
-			path: "/about",
-			name: "about",
+			path: "/DiagramaEvolutiei",
+			name: "Diagrama evolutiei",
 			// route level code-splitting
 			// this generates a separate chunk (About.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
-			component: () => import("../views/AboutView.vue"),
+			component: () => import("../views/DiagramaView.vue"),
+		},
+		{
+			path: "/SistemulPartidelorPolitice",
+			name: "Sistemul Partidelor",
+			// route level code-splitting
+			// this generates a separate chunk (About.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import("../views/SistemPartide.vue"),
+		},
+		{
+			path: "/TrasaturiIdeologice",
+			name: "Trasaturi ideologice",
+			// route level code-splitting
+			// this generates a separate chunk (About.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import("../views/TrasaturiView.vue"),
+		},
+		{
+			path: "/Quiz",
+			name: "Quiz",
+			// route level code-splitting
+			// this generates a separate chunk (About.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import("../views/QuizView.vue"),
 		},
 	],
 });
