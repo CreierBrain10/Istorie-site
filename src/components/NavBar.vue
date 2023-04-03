@@ -1,12 +1,12 @@
 <script setup>
 	import { getCurrentInstance, onMounted, ref } from "vue";
-
+	import { useRoute } from "vue-router";
 	let navigation = [
 		{ name: "Home", route: "/", current: false },
 		{ name: "Diagrama evolutiei formelor de guvernare", route: "/DiagramaEvolutiei", current: false },
 		{ name: "Sistemul partidelor politice", route: "/SistemulPartidelorPolitice", current: false },
 		{ name: "Trasaturi ideologice", route: "/TrasaturiIdeologice", current: false },
-		{ name: "Quiz", route: "/Quiz", current: false },
+		{ name: "Membrii grupei", route: "/grupa", current: false },
 	];
 	const { proxy } = getCurrentInstance();
 	const currentUri = proxy.$route.path;

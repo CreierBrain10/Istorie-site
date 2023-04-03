@@ -6,21 +6,26 @@
 	<NavBar />
 	<div class="grid custom">
 		<main class="mt-20 text-center grid grid-cols-2 m-8 p-8 gap-8 h-96 self-center place-items-center">
-			<p>
-				<strong class="block">Programul Partidului National Liberal(1922)</strong>
-				<span class="block">-dreptate sociala</span> -sporire a productiei si inlesnirea exportului
+			<p class="border inset border-slate-800 rounded-2xl border-8 shadow-md p-6">
+				<strong class="block text-6xl">Programul Partidului National Liberal(1922)</strong>
+				<span class="block text-2xl">-Dreptate sociala</span>
+				<span class="block text-2xl">-Sporire a productiei si inlesnirea exportului</span>
 			</p>
-			<p>
-				<strong class="block">Programul Partidului National Taranesc (1935)</strong>
-				<span class="block">-drept de vot la femei</span> -loc de munca si proprietate garantat
+			<p class="border inset border-slate-800 rounded-2xl border-8 shadow-md p-6">
+				<strong class="block text-6xl">Programul Partidului National Taranesc (1935)</strong>
+				<span class="block text-2xl">-drept de vot la femei</span>
+				<span class="block text-2xl">-Loc de munca si proprietate garantat</span>
 			</p>
-			<p>
-				<strong class="block">Comunism</strong> <span class="block">-stat de nationalitati</span> -lupta pentru
-				eliberare si independenta lor nationala( Basarabia, Bucovina ,Transilvania si Dobrogea)
+			<p class="border inset border-slate-800 rounded-2xl border-8 shadow-md p-6">
+				<strong class="block text-6xl">Comunism</strong> <span class="block text-2xl">-Stat de nationalitati</span>
+				<span class="block text-2xl"
+					>-Lupta pentru eliberare si independenta lor nationala( Basarabia, Bucovina ,Transilvania si Dobrogea)</span
+				>
 			</p>
-			<p>
-				<strong class="block"> legionalism</strong>
-				<span class="block">-conservatorism nationalist</span> -ultranationalism de extrema dreapta
+			<p class="border inset border-slate-800 rounded-2xl border-8 shadow-md p-6">
+				<strong class="block text-6xl"> Legionalism</strong>
+				<span class="block text-2xl">-Conservatorism nationalist</span>
+				<span class="block text-2xl">-Ultranationalism de extrema dreapta</span>
 			</p>
 		</main>
 	</div>
