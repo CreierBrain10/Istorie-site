@@ -24,7 +24,7 @@
 				>
 			</p>
 			<p class="inset border-slate-800 rounded-2xl border-8 shadow-md p-6">
-				<strong class="block text-6xl"> Legionalism</strong>
+				<strong class="block text-6xl"> Legionari</strong>
 				<span class="block text-2xl">-Conservatorism nationalist</span>
 				<span class="block text-2xl">-Ultranationalism de extrema dreapta (nazism)</span>
 			</p>

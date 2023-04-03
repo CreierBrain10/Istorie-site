@@ -10,7 +10,7 @@
 		<ul class="text-start justify-self-center text-2xl mt-16">
 			<li>&#x2022;Boca Stefan-Mihai</li>
 			<li>&#x2022;Stefanache Cosmin</li>
-			<li>&#x2022;Luca Daria</li>
+			<li>&#x2022;Luca Daria-Andreea</li>
 			<li>&#x2022;Alexa Ioana-Stefania</li>
 			<li>&#x2022;Baban Florentina</li>
 			<li>&#x2022;Radu Mihai-Alexandru</li>
