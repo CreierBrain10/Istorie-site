@@ -12,7 +12,7 @@
 			<div :class="style">
 				<p style="display: inline-block">
 					<strong class="block mb-4 italic underline">1. Partidul Național Liberal(1922)</strong>Deviza ,,prin noi
-					înșine" teoretizata de Vintilă Brătianu și de Ștefan Zelentin. Se urmărea sprijinirea capitalului autohton și
+					înșine" teoretizata de Ion Brătianu și de Ștefan Zelentin. Se urmărea sprijinirea capitalului autohton și
 					limitarea pătrunderii celui străin în economia românească -se punea accentul pe dezvoltarea industriei.
 				</p>
 				<p>
