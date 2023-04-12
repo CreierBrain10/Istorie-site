@@ -11,8 +11,9 @@
     "@headlessui/vue": "^1.7.12",
     "@heroicons/vue": "^2.0.17",
     "@vue/runtime-core": "^3.2.47",
-    "pinia": "^2.0.32",
+    "pinia": "^2.0.34",
     "vue": "^3.2.47",
+    "vue-headless-ui": "^0.0.16-alpha.1",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

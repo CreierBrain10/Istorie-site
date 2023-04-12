@@ -1,8 +1,13 @@
 <script setup>
+	import { ref } from "vue";
 	import NavBar from "../components/NavBar.vue";
+	const darkTheme = ref(true);
+	function themeToggler() {
+		darkTheme = !darkTheme.value;
+	}
 </script>
 <template>
-	<NavBar />
+	<NavBar darkTheme="{{darkTheme.value}}" />
 	<div class="grid place-items-center justify-center mt-20">
 		<div class="grid place-items-center border inset-0 border-gray-600 rounded-xl p-4 border-double">
 			<img src="@/components/icons/diagram.png" />

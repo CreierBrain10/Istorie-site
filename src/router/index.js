@@ -18,7 +18,7 @@ const router = createRouter({
 		},
 		{
 			path: "/SistemulPartidelorPolitice",
-			name: "Sistemul Partidelor",
+			name: "Sistemul partidelor",
 			// route level code-splitting
 			// this generates a separate chunk (About.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
