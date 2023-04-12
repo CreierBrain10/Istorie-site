@@ -1,9 +1,11 @@
 <script setup>
 	import NavBar from "../components/NavBar.vue";
+	import { useThemeStore } from "@/stores/theme";
+	const theme = useThemeStore();
 </script>
 <template>
 	<NavBar />
-	<main class="grid justify-center gap-10">
+	<main :class="[theme.dark ? 'dark ' : 'light ', 'grid justify-center gap-10']">
 		<section class="max-w-6xl mt-20">
 			<p class="text-8xl text-start px-12 ml-8 mt-16">
 				,,Adevărul învinge, <span class="text-blue-500">indiferent</span> de soarta celor care l-au servit."
@@ -46,6 +48,7 @@
 <style scoped>
 	main {
 		grid-template-columns: 600px 600px 600px;
+		height: 100vh;
 	}
 	section {
 		grid-column: 1 / span 2;
