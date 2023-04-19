@@ -72,9 +72,11 @@ body {
 .dark {
 	color: var(--color-text);
 	background: var(--color-background);
+	transition: background 0.15s;
 }
 
 .light {
 	background: #e6e6e6;
 	color: #1f1f1f;
+	transition: background 0.15s;
 }

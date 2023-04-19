@@ -2,29 +2,12 @@
 	import { ref } from "vue";
 	import NavBar from "../components/NavBar.vue";
 	import swal from "sweetalert";
-
+	import quiz from "../assets/quiz.json";
 	import { useThemeStore } from "@/stores/theme";
 	const theme = useThemeStore();
-	const questions = [
-		{
-			question: "What is American football called in England?",
-			choices: ["American football", "football", "Handball"],
-			rightAnswer: "American football",
-		},
-		{
-			question: "What is the largest country in the world?",
-			choices: ["Russia", "Canada", "United States"],
-			rightAnswer: "Russia",
-		},
-		{
-			question: "What is the 100th digit of Pi?",
-			choices: [9, 4, 7],
-			rightAnswer: 9,
-		},
-	];
 
 	const questionIndex = ref(0);
-	const question = ref(questions[0]);
+	const question = ref(quiz[0]);
 	const answer = ref("");
 	function submit() {
 		const currentAnswer = answer.value;
@@ -34,14 +17,14 @@
 			swal("Raspuns corect", "", "success");
 		} else swal("Raspuns gresit", "Reincearca", "error");
 
-		if (questionIndex.value < questions.length && isCorrect) {
+		if (questionIndex.value < quiz.length && isCorrect) {
 			questionIndex.value++;
-			question.value = { ...questions[questionIndex.value] };
+			question.value = { ...quiz[questionIndex.value] };
 		}
 	}
 
 	function restart() {
-		question.value = questions[0];
+		question.value = quiz[0];
 		answer.value = "";
 		questionIndex.value = 0;
 	}
@@ -52,7 +35,7 @@
 		<NavBar />
 		<main class="grid place-items-center text-xl pt-20">
 			<form>
-				<div v-if="questionIndex < questions.length">
+				<div v-if="questionIndex < quiz.length">
 					<div class="mb-20 text-3xl">{{ question.question }}</div>
 					<div
 						v-for="c of question.choices"
@@ -85,7 +68,7 @@
 				</div>
 			</form>
 			<button
-				v-if="questionIndex < questions.length"
+				v-if="questionIndex < quiza.length"
 				:class="[theme.dark ? 'bg-slate-900' : 'bg-zinc-300', 'border rounded-lg my-4 p-3  text-xl border-gray-950']"
 				type="button"
 				@click="submit"
