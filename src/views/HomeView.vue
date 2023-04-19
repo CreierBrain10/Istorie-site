@@ -5,7 +5,7 @@
 </script>
 <template>
 	<NavBar />
-	<main :class="[theme.dark ? 'dark ' : 'light ', 'grid justify-center gap-10']">
+	<main :class="[theme.dark ? 'dark ' : 'light ', 'grid justify-center gap-10', theme.steaua ? ' steauaClass' : '']">
 		<section class="max-w-6xl mt-20">
 			<p class="text-8xl text-start px-12 ml-8 mt-16">
 				,,Adevărul învinge, <span class="text-blue-500">indiferent</span> de soarta celor care l-au servit."

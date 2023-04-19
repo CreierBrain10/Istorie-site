@@ -25,6 +25,9 @@
 	function toggleTheme() {
 		theme.themeToggler();
 	}
+	function toggleSteaua() {
+		theme.steauaToggler();
+	}
 </script>
 
 <template>
@@ -38,6 +41,10 @@
 				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 					<div class="hidden sm:ml-6 sm:block">
 						<div class="flex space-x-4">
+							<div
+								class="h-4 w-4 hover:cursor-not-allowed"
+								@click="toggleSteaua"
+							></div>
 							<div v-for="item in navigation">
 								<RouterLink
 									:to="item.route"

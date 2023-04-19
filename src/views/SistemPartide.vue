@@ -17,6 +17,7 @@
 						theme.dark ? 'dark border-gray-800 bg-zinc-800' : 'light border-gray-500 bg-zinc-300 text-black',
 						'mt-20',
 						'border inset rounded-lg p-4 grid grid-cols-2 gap-24',
+						theme.steaua ? ' steauaClass' : '',
 					]"
 				>
 					<p style="display: inline-block">

@@ -80,3 +80,10 @@ body {
 	color: #1f1f1f;
 	transition: background 0.15s;
 }
+
+.steauaClass {
+	background-image: url("../components/icons/steauabg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

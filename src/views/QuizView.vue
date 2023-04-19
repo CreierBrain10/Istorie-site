@@ -38,7 +38,7 @@
 </script>
 
 <template>
-	<full :class="[theme.dark ? 'dark' : 'light', 'grid']">
+	<full :class="[theme.dark ? 'dark' : 'light', 'grid' theme.steaua ? ' steauaClass' : '']">
 		<NavBar />
 		<main class="grid place-items-center text-xl pt-20">
 			<form>
