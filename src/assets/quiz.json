@@ -1,17 +1,17 @@
 [
 	{
 		"question": "What is American football called in England?",
-		"choices": ["American football", "football", "Handball"],
+		"choices": ["American football", "football", "Handball", "Oina"],
 		"rightAnswer": "American football"
 	},
 	{
 		"question": "What is the largest country in the world?",
-		"choices": ["Russia", "Canada", "United States"],
+		"choices": ["Russia", "Canada", "United States", "Tigani"],
 		"rightAnswer": "Russia"
 	},
 	{
 		"question": "What is the 100th digit of Pi?",
-		"choices": [9, 4, 7],
+		"choices": [9, 4, 7, 14],
 		"rightAnswer": 9
 	}
 ]

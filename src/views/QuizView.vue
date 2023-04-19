@@ -1,11 +1,12 @@
 <script setup>
 	import { ref } from "vue";
-	import NavBar from "../components/NavBar.vue";
+	import NavBar from "@/components/NavBar.vue";
 	import swal from "sweetalert";
-	import quiz from "../assets/quiz.json";
+	import quiz from "@/assets/quiz.json";
 	import { useThemeStore } from "@/stores/theme";
 	const theme = useThemeStore();
 
+	let incercari = ref(0);
 	const questionIndex = ref(0);
 	const question = ref(quiz[0]);
 	const answer = ref("");
@@ -13,17 +14,20 @@
 		answer.value = c;
 	}
 	function submit() {
+		if (answer.value) incercari.value++;
 		const currentAnswer = answer.value;
 		const currentQuestion = question.value;
 		const isCorrect = currentAnswer === currentQuestion.rightAnswer;
 		if (isCorrect) {
 			swal("Raspuns corect", "", "success");
-		} else swal("Raspuns gresit", "Reincearca", "error");
+		} else if (answer.value) swal("Raspuns gresit", "Reincearca", "error");
+		else swal("Nu ai selectat niciun raspuns. Reincearca", "", "error");
 
 		if (questionIndex.value < quiz.length && isCorrect) {
 			questionIndex.value++;
 			question.value = { ...quiz[questionIndex.value] };
 		}
+		answer.value = "";
 	}
 
 	function restart() {
@@ -60,7 +64,11 @@
 						</div>
 					</div>
 				</div>
-				<div v-else>
+				<div
+					v-else
+					class="grid items-center gap-24"
+				>
+					<div class="text-2xl">Ai raspuns corect la toate intrebarile in {{ incercari }} incercari!</div>
 					<button
 						:class="[
 							theme.dark ? 'bg-slate-900' : 'bg-zinc-300',
@@ -79,7 +87,7 @@
 				type="button"
 				@click="submit"
 			>
-				Verifica raspunsul
+				Verifica
 			</button>
 		</main>
 	</full>

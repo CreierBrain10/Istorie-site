@@ -1,5 +1,5 @@
 <script setup>
-	import NavBar from "../components/NavBar.vue";
+	import NavBar from "@/components/NavBar.vue";
 	import { useThemeStore } from "@/stores/theme";
 	const style = "border inset rounded-lg p-4 grid grid-cols-2 gap-24";
 	const theme = useThemeStore();
