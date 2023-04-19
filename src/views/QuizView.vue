@@ -68,7 +68,7 @@
 				</div>
 			</form>
 			<button
-				v-if="questionIndex < quiza.length"
+				v-if="questionIndex < quiz.length"
 				:class="[theme.dark ? 'bg-slate-900' : 'bg-zinc-300', 'border rounded-lg my-4 p-3  text-xl border-gray-950']"
 				type="button"
 				@click="submit"
