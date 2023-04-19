@@ -9,6 +9,9 @@
 	const questionIndex = ref(0);
 	const question = ref(quiz[0]);
 	const answer = ref("");
+	function selectAnswer(c) {
+		answer.value = c;
+	}
 	function submit() {
 		const currentAnswer = answer.value;
 		const currentQuestion = question.value;
@@ -37,21 +40,24 @@
 			<form>
 				<div v-if="questionIndex < quiz.length">
 					<div class="mb-20 text-3xl">{{ question.question }}</div>
-					<div
-						v-for="c of question.choices"
-						:key="c"
-						:class="[
-							theme.dark ? 'bg-slate-900' : 'bg-zinc-300',
-							'border rounded-lg my-4 p-3  text-xl border-gray-950',
-						]"
-					>
-						<input
-							type="radio"
-							name="choice"
-							v-model="answer"
-							:value="c"
-						/>
-						{{ c }}
+					<div class="grid grid-cols-2 gap-16 items-center">
+						<div
+							v-for="c of question.choices"
+							:key="c"
+							:class="[
+								theme.dark ? 'bg-slate-900' : 'bg-zinc-300',
+								'border rounded-lg my-4 p-3 text-xl border-gray-950',
+							]"
+							@click="selectAnswer(c)"
+						>
+							<input
+								type="radio"
+								name="choice"
+								v-model="answer"
+								:value="c"
+							/>
+							{{ c }}
+						</div>
 					</div>
 				</div>
 				<div v-else>
