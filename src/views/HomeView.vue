@@ -18,14 +18,14 @@
 				>
 			</p>
 		</section>
-		<div class="mb-0 mr-0 self-end bratianuContainer justify-self-center">
+		<div class="mb-0 mr-0 self-center bratianuContainer justify-self-center">
 			<img
 				src="../components/icons/Bratianu.png"
 				class="rounded-full bratianu"
 			/>
 		</div>
 
-		<div class="pnl mb-0 self-end flex">
+		<div class="pnl mb-0 self-start flex">
 			<img
 				src="../components/icons/pnl.png"
 				class="inline-block"
@@ -37,11 +37,22 @@
 				politica din țară
 			</p>
 		</div>
-		<div class="mb-0 self-end inline-block stema">
+		<div class="mb-0 self-start inline-block stema">
 			<img
 				src="../components/icons/stema.png"
 				class=""
 			/>
+		</div>
+		<div>
+			<h1 class="text-4xl justify-self-center flex">Membrii grupei</h1>
+			<ul class="text-start justify-self-center text-2xl mt-12">
+				<li>&#x2022;Boca Stefan-Mihai</li>
+				<li>&#x2022;Stefanache Cosmin</li>
+				<li>&#x2022;Luca Daria-Andreea</li>
+				<li>&#x2022;Alexa Ioana-Stefania</li>
+				<li>&#x2022;Baban Florentina</li>
+				<li>&#x2022;Radu Mihai-Alexandru</li>
+			</ul>
 		</div>
 	</main>
 </template>
