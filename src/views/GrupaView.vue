@@ -6,7 +6,7 @@
 
 <template>
 	<NavBar />
-	<membri :class="[theme.dark ? 'dark ' : 'light ', 'grid content-start main' theme.steaua ? ' steauaClass' : '']">
+	<membri :class="[theme.dark ? 'dark ' : 'light ', theme.steaua ? ' steauaClass' : '', 'grid content-start main']">
 		<div class="grid mt-32">
 			<h1 class="text-6xl h-16 block justify-self-center">Membrii grupei</h1>
 			<ul class="text-start justify-self-center text-2xl mt-16">

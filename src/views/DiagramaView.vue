@@ -6,7 +6,11 @@
 <template>
 	<NavBar />
 	<div
-		:class="[theme.dark ? 'dark ' : 'light ', 'grid place-items-center justify-center' theme.steaua ? ' steauaClass' : '']"
+		:class="[
+			theme.steaua ? 'steauaClass' : '',
+			theme.dark ? 'dark ' : 'light ',
+			'grid place-items-center justify-center',
+		]"
 	>
 		<div class="grid place-items-center border inset-0 border-gray-600 rounded-xl p-4 border-double mt-20">
 			<img src="@/components/icons/diagram.png" />

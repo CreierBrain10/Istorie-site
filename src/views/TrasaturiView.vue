@@ -5,7 +5,7 @@
 </script>
 <template>
 	<NavBar />
-	<div :class="[theme.dark ? 'dark ' : 'light ', 'grid custom' theme.steaua ? ' steauaClass' : '']">
+	<div :class="[theme.dark ? 'dark ' : 'light ', theme.steaua ? ' steauaClass' : '', 'grid custom']">
 		<main class="mt-20 text-center grid grid-cols-2 m-8 p-8 gap-8 h-96 self-center place-items-center">
 			<p class="inset border-slate-800 rounded-2xl border-8 shadow-md p-6">
 				<strong class="block text-6xl">Programul Partidului National Liberal(1922)</strong>

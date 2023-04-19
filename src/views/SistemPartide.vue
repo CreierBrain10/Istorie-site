@@ -5,7 +5,7 @@
 	const theme = useThemeStore();
 </script>
 <template>
-	<full :class="[theme.dark ? 'dark ' : 'light ', 'grid']"
+	<full :class="[theme.dark ? 'dark ' : 'light ', theme.steaua ? 'steauaClass' : '', 'grid']"
 		><NavBar />
 		<div
 			class="place-items-center text-center place-self-center p-4 max-w-4xl text-lg"
@@ -14,10 +14,9 @@
 			<main style="cursor: default">
 				<div
 					:class="[
-						theme.dark ? 'dark border-gray-800 bg-zinc-800' : 'light border-gray-500 bg-zinc-300 text-black',
+						theme.dark ? ' border-gray-800 bg-zinc-800' : ' border-gray-500 bg-zinc-300 text-black',
 						'mt-20',
 						'border inset rounded-lg p-4 grid grid-cols-2 gap-24',
-						theme.steaua ? ' steauaClass' : '',
 					]"
 				>
 					<p style="display: inline-block">
